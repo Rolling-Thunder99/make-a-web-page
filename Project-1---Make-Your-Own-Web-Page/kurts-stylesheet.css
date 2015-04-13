@@ -1,0 +1,123 @@
+
+/* *{
+	outline: 1px solid red !important; */
+
+p{
+	padding: 0px 0px;
+}
+
+/* This code gives the only <h1> 
+on the page a white TEXT color */
+h1 {
+	color: rgb(45, 101, 174);
+	text-align: center;
+	font-size: 3em;
+}
+
+h2 {
+	margin: 10px;
+}
+
+h3 {
+	color:#964632;
+}
+
+ul {
+	list-style-type: none;
+	/* font-size: 1.2em;
+	line-height: 2em; */
+
+	/* this removes the bullets that 
+	up by default*/
+}
+
+/* This code makes the <body> have 
+a black BACKGROUND color. This rule 
+would apply to all the elements 
+inside of the <body> unless... */
+body {
+	/*background-color: rgb(105, 173, 157);*/
+	background-color: rgb(228, 240, 239);
+	padding: 10px 10px;
+	margin: 0 auto; /* the 0 refers to the
+	top and bottom margains.*/
+	font-family: helvetica;
+	padding-bottom: 60em;
+}
+
+/* ...this code gives everything 
+inside of the elements with 
+class="lesson" a gray background 
+color. Unless, of course... */
+.lesson {
+	background-color: rgb(79, 162, 207);
+	 border-radius: 20px;
+	 padding: 10px;
+}
+
+/* ...an element inside has 
+a class="concept" */
+.concept {
+	background-color: #C8CFB9;
+	padding: 4px;
+	margin: 10px;
+	border-radius: 4px;
+
+}
+
+/* This code sets the font size to 
+20 pixels, makes it bold, and centers 
+it.*/
+.concept-title {
+	font-size: 1.6em;
+	font-weight: bold;
+	text-align: center;
+	margin: 8px;
+}
+
+/* This code sets the font color to 
+red. */
+.concept-description {
+	color: black;
+	margin: 6px;
+	
+/* Since I had removed all the <em>
+tags from the HTML and replaced them
+with <span class="italic">, I needed 
+to write this to have the "italic" 
+class actually do something... */
+}
+
+.italic {
+	font-style: italic;
+}
+
+/* ...I did something similar with 
+the <b> tags*/
+.bold {
+	font-weight: bold;
+}
+
+.bemc {
+	font-style: italic;
+	font-weight: bold;
+	color: green;
+}
+
+.ti50 {
+	text-indent:  100px;
+}
+
+
+
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a:visited {
+ color:#0000FF;
+ }

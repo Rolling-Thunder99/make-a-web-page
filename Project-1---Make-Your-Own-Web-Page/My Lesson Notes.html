@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel ="stylesheet" type="text/css" href="kurts-stylesheet.css">
+   	
+  <title>Kurt's Notes
+  </title>
+</head>
+<!-- like Andy, each lesson div will have a class="lesson"
+  each block will have a class and each div section will have further div structure.
+
+  so to reiterate there will be a class="lesson" with its own styling, class="concept","concept-title" and a class ="concept-description"
+-->
+
+<body>
+ <div class="TOC">
+  <h1>Table of Contents</h1>
+  
+  <ol style="line-height:2em; font-size:2em">
+     	
+  	<li><a href="#lesson-1">Lesson 1: Basics of the Web and HTML</a>
+  	    <!--This code adds an unordered list within the list etme of the ordered list -->
+
+  	  <ul>
+  	    <li><a href="#lesson-1.1">Major pieces of the Web</a></li>
+  		<li><a href="#lesson-1.2">HTML</a></li>
+  		<li><a href="#lesson-1.3">Inline vs Block Elements</a></li>
+  		<li><a href="#lesson-1.4">Computers are stupid</a></li>
+  	  </ul>
+  	</li>
+  	<li><a href="#lesson-2">Lesson 2: Creating Standard Documents with HTML</a>
+
+  	  <ul>
+  	  	<li><a href="#lesson-2.1">Website Composition</a></li>
+  	  	<li><a href="#lesson-2.2">Developer Tools inside a Browser</a></li>
+  	  	<li><a href="#lesson-2.3">Tree Like Structure</a></li>
+  	  	<li><a href="#lesson-2.4">Text editors for Web Programming</a></li>
+  	  </ul>
+  	</li>
+  	<li><a href="#lesson-3">Lesson 3: Adding CSS style to HTML Structure</a>
+
+  	  <ul>
+  	  	<li><a href="#lesson-3.1">Inheritance</a></li>
+  	  	<li><a href="#lesson-3.2">3 ways to include CSS style in a Webpage</a></li>
+  	  	<li><a href="#lesson-3.3">Styling Up</a></li>
+  	  	<li><a href="#lesson-3.4">The CSS Box Revisited</a></li>
+  	  	<li><a href="#lesson-3.5">Box-sizing choices: Pixels or Percentage</a></li>
+  	  	<li><a href="#lesson-3.6">Positioning Boxes</a></li>
+  	  	<li><a href="#lesson-3.7">Adding Images</a></li>
+  	  	<li><a href="#lesson-3.8">Code, Test, Refine</a></li>
+  	  	<li><a href="#lesson-3.9">More on Dev Tools</a></li>
+  	  	<li><a href="#lesson-3.10">Benefits of Avoiding Repetition</a></li>
+  	  </ul>  	  
+  	</li>
+  </ol>	  
+ </div>
+
+  <h1>Kurt's Notes - Introduction to Programming
+  </h1>
+  
+  <div class="lesson">
+  
+  	<h2 id="lesson-1">Lesson 1: Basics of the Web and HTML</h2>
+		<div class="concept" id="lesson-1.1">
+		<!-- again this block will have its own custome style and within this box will be divs with its own style-->
+	  		<div class="concept-title">Major pieces of the Web
+	  		</div>
+	  
+	   		 	<div class="concept-description">
+	    			World Wide Web is made up of:<br>
+	      	
+	      			<ol>
+	      	  			<li>The users</li>
+		        		<li>PCs and Browser</li>
+		        		<li>Internet</li>
+	       		 		<li>Servers</li>
+	      			</ol>
+	    			
+	    			
+	  		  	</div>
+		</div>
+	
+		<div class="concept" id="lesson-1.2"> 
+			<div class="concept-title">HTML
+	  		</div>
+	  
+	   			<div class="concept-description">
+	  		
+	  				<p>HTML stands for 
+
+	  				<!--using the <span> inline function that will only affect the current line of text within that paragraph.--> 
+
+	  				<span class="italic">Hypertext Markup Language.</span> HTML contains these elements:</p>
+	  	
+	  		  		<ol>
+	  		    		<li>Text content - what you see</li>
+			  	    	<li>Markup - what it looks like</li>
+			  	    	<li>References to other documents such as:
+	  	   					<ul>
+	  	 	  					<li>Images</li>
+	  	 	  					<li>Videos</li>
+	  		   					<li>Other documents</li>
+		 	 	   			</ul>
+		  	  			</li>
+	  				
+	  					<li>Links to other pages</li>
+
+		  	  		</ol>
+		
+		  			<p>There are two kinds of HTML tags:
+
+		  	 		<ol>
+		  		  		<li>Opening tag - closing tag. e.g. with content
+
+		  		  	<!--bemc refers to the css code of bold, italic, and black color--> 	
+
+		  		  		<span class="bemc"> &lt; name &gt; contents &lt; /name &gt; </span> </li>
+		  		  		<li>Void tags - These tags only need an opening tag since they have no content. They reference to other pages, images, etc.<br>  e.g. <br>
+
+		  		  			
+		  		  		<span class="bemc"> &lt; br &gt; </span>The line break tag.</li>
+
+		  		  	</ol>		
+		  		  			
+		  		  		The <span class="bemc">&lt; img tag &gt;.</span> It is used to reference images from other locatons on your html page. The alt text part is used if the image reference is broken. The format of this tag is <span class="bemc"> &lt; img src = "url" alt = "text"></span>
+		  		  					  	    	
+		  		  	<p>	
+
+		  	    	One last tag I will mention now is the anchor tag <span class="bemc"> &lt; a &gt; &lt; /a &gt;.</span> The anchor tag is used to direct you to a website or another document on your own website by a hyperlinked word, phrase, icon, etc.
+
+		  	    	The format of the anchor tag is <span class="bemc"> &lt; a href = "www.somewebpage.com" &gt; some linked word &lt; /a &gt;.</span> 
+	  			
+	  				</p>
+	  			
+	  				
+	  	    	</div>  
+		</div>
+
+		<div class="concept" id="lesson-1.3">
+			<div class="concept-title">Inline vs Block Elements
+			</div>
+
+				<div class="concept-description">
+
+					Elements are refers to everything within a set of opening and closing tags.
+
+					<h3>Inline elements </h3>
+
+					<p>Only takes up as much width as it needs. Does not force new lines.</p>
+
+
+					Examples of Inline Tags: 
+					
+					<ol>	
+						<li><span class="bemc">&lt; b &gt; &lt; /b &gt; </span>is the bold tag.</li>
+						<li><span class="bemc">&lt; em &gt; &lt; /em &gt; </span> is the emphasis tag.</li>
+						<li><span class="bemc">&lt; img &gt;</span> tag is a void tag...no closing tag.</li>
+						<li><span class="bemc">&lt; span &gt; &lt; /span &gt; </span> is the span tag. It changes things on the lines between the span tags.</li>
+						<li><span class="bemc">&lt; strong &gt; &lt; /strong &gt; </span> is the strong tag which is basically an inline bold function.</li>
+					  
+					</ol>
+					<h3>Block elements</h3>
+
+					<P>Takes up the full width available, with a new line before and after. It also forces an invisible box around the content within the tags.
+					</P>
+					
+					Examples of Block Tags:
+					<ol>
+						<li><span class="bemc">&lt; p &gt; &lt; /p &gt; </span> is the paragraph tag.</li>
+						<li><span class="bemc">&lt; div &gt; &lt; /div &gt; </span> is the divider tag. It is used to identify the webpage structure and to lay out the web page. Used to group items.</li> 
+					</ol>
+					
+					
+				</div>
+
+		</div>  
+
+		<div class="concept" id="lesson-1.4">
+			<div class="concept-title">Computers are stupid
+			</div>
+
+				<div class="concept-description">
+
+					<p>Computers only respond to the correct input. So programmers need to write code in the proper syntax for the computers to understand.
+					</p>
+				</div>
+		</div>
+
+	<h2 id="lesson-2">Lesson 2: Creating Standard Documents with HTML</h2>
+
+		<div class="concept" id="lesson-2.1">
+			<div class="concept-title">Website Composition</div>	
+				
+				<div class="concept-description">
+
+					<p>Websites are made up of 3 main components and as an example be compared to your home:</p>
+					
+					<ol>
+						<li><h3>HTML</h3> Hyper text markup language - is the language that sets the structure of the website. e.g. like a room such as a kitchen.</li>
+						<li><h3>CSS</h3> Cascading style sheets - are used for describing the look and formatting of a document written in markup language. e.g. such as the paint on the walls.</li>
+						<li><h3>Javascript</h3> - is the workable features. e.g. a garage door opener.</li>
+					</ol> 	
+					
+
+				</div>
+		</div>
+			
+		<div class="concept" id="lesson-2.2">
+			<div class="concept-title">Developer Tools inside a Browser</div>
+				
+				<div class="concept-description">
+
+					<p>You can inspect elements of the web page inside the browser. Elements can be either <strong> inline </strong> or <strong>block.</strong> Think of block elements as having an invisible box around the contents inside of them. All elements are rectangular. </p>
+
+					<p>You can modify the webpage from the developer tools without affecting the html or css files associated to it. The changes will only be temporary and can be discarded with a browser refresh.
+		
+					</p>
+
+				</div>
+		</div>
+		
+		<div class="concept" id="lesson-2.3">
+			<div class="concept-title">Tree Like Structure</div>
+
+				<div class="concept-description">
+
+					<p>It is a tree like structure because you can put HTML elements inside of other HTML elements. Basically you are putting boxes inside of boxes. The div tags divide the page. As said it is like a family where the mother had children and the children had children and it is all nested together like a family tree.</p>	
+
+				</div>	
+		</div>
+
+		<div class="concept" id="lesson-2.4">
+			
+			<div class="concept-title">Text editors for Web Programming</div>
+				
+				<div class="concept-description">
+
+					<p>We can use 3 tools for web programming:
+					</p>
+						<ol>
+							<li><h3>Scratchpad</h3> easy to use for beginngers.</li>
+							<li><h3>Codepen</h3> fewer beginners but has friendly features.</li>
+							<li><h3>Sublime</h3> more challenging to start with.</li>
+						</ol>
+					<p>
+					All these tools make it easier to write code for web programming. Some editors add closing html tags to make the programming process more simple.
+					</p>
+
+				</div>	
+		</div>			
+	<h2 id="lesson-3">Lesson3: Adding CSS style to HTML Structure</h2>
+
+		<div class="concept" id="lesson-3.1">
+
+			<div class="concept-title">Inheritance</div>
+
+				<div class="concept-description">
+					
+					<p><strong>Inheritance</strong> is a mechanism by which properties are applied not only to a specific element but also to its descendents. Descendent elements inherit <u>text-related properties</u> but <b>not </b><u>box-related properties</u>.</p>
+
+					<p><strong>Some Inheritable properties</strong></p>
+						<ol>
+							<li>Color</li>
+							<li>Font</li>
+							<li>Line-height</li>
+						</ol>
+					
+
+					<p><strong>Some Non-Inheritable properties
+						</strong>
+					</p>	
+						<ol>
+							<li>Background</li>
+							<li>Border</li>
+							<li>Display</li>
+						</ol>	
+						
+				</div>
+
+
+		</div>
+
+
+
+		<div class="concept" id="lesson-3.2">
+
+			<div class="concept-title">3 ways to include CSS style in Webpage</div>
+
+				<div class="concept-description">
+
+						<!--I added a style of padding to my html to allow for indentation of white space on a per line basis. -->
+
+					<ol>
+						<li><b>Method 1:</b> Write CSS in the <span class="bemc">&lt;head &gt; </span> section of your HTML.<br>
+
+						Use <span class="bemc"> &lt; head &gt;</span><br>
+						<span style="padding-left:50px" class="bemc">&lt; style &gt; </span><br>
+
+						<span style="padding-left:75px"	class="bemc"> div {  <br>
+						</span>
+
+						<span style="padding-left:75px" class="bemc"> }</span><br>
+
+						<span style="padding-left:50px" class="bemc">&lt; /style &gt; </span><br>
+
+						<span style="padding-left:30px" class="bemc"> &lt; /head &gt;</span><br>
+
+						</li>
+
+						<li><b>Method 2:</b> Write you style inline with your HTML 
+							
+							<p>This is a bad idea because it lends to lots of repeated code and lots of added work. So avoid this method as much as possible.</p>
+
+						</li>
+
+						<li><b>Method 3:</b> Link your HTML to a separate CSS file by writing the link address in your <span class="bemc">&lt; head &gt; </span> section of your HTML.
+							
+							<p>This is the method we will use predominately.  
+							</p>
+							
+						Use <span class="bemc"> &lt; head &gt;</span><br>
+						<span style="padding-left:50px" class="bemc">&lt; link rel="stylesheet" type="text/css" href="main.css" &gt; </span><br>
+
+						
+						<span style="padding-left:30px" class="bemc"> &lt; /head &gt;</span>
+
+						<p> The link rel="stylesheet" portion links the css document to the html as long as it is located in the same folder.</p>
+
+						</li>
+					
+					</ol>
+				</div>
+		</div>		
+
+				<div class="concept" id="lesson-3.3">
+
+					<div class="concept-title">Styling Up</div>
+
+						<div class="concept-description">
+
+							<p>We already linked the CSS document to the HTML document. Now it is time to add the style to the elements of our choice. This can be done to basic elements like <span class="bemc"> &lt; h1 &gt;</span> or defining classes or ids in the HTML with a<span class="bemc"> &lt; div &gt; </span> tag or an <span class="bemc"> &lt; id &gt; </span> tag.
+							</p>
+
+							<p>A simple example of adding CSS to an HTML element:</p>
+
+							<div class="bemc">h1 {
+							<br>
+								<span style="padding-left:35px">background-color : black;
+								</span><br>
+								
+								<span style="padding-left:35px">color : white;</span><br>
+							}
+							</div>
+
+							<p>In this example the <span class="bemc">h1</span> is known as the <b>selector</b>. Anything written between the curly braces will be interpreted as a <b>rule</b> and will be applied to all <span class="bemc">h1</span> elements.</p>
+
+							<p>The line <span class="bemc">background-color : black;</span> is a <strong>declaration</strong>. <span class="bemc">background-color </span>is a <strong>property</strong> and <span class="bemc">black</span> is a value of that prperty.
+							</p>
+
+						</div>
+
+				</div>		
+
+				<div class="concept" id="lesson-3.4">
+
+					<div class="concept-title">The CSS Box Revisited</div>
+
+						<div class="concept-description">
+
+							<p> The CSS box has <strong>4 levels	
+							</strong> to its design. Starting from the inner most box layer.</p>
+
+								<ol>
+									<li><b>Content:</b>
+
+										 is the layer that holds images or text appearing on websites. It is also the nucleus because it sits at the center of the box.
+									
+									</li>
+
+									<li><b>Padding:</b>
+
+										is the layer that clears area around the content layer. Its affected by the background color of the box. Protects the contents of the box.
+									
+									</li>
+								
+									<li><b>Border:</b>
+
+										is the layer inherited from color property of the box.
+									
+									</li>
+
+									<li><b>Margin</b>
+
+										is the layer that clears area around the border. Clears  space between boxes. It doesn't have a color. It is completely transparent.
+									
+									</li>
+
+								</ol> 
+
+							
+							<div class="image"><img src="images/box-model.gif" alt="image">
+							</div>	
+
+							<p>The element is equal to the sum of the following from border-left, padding-left, content, padding-right, and border-right. You can view this box in the dev tools- computed tab.</p> 
+
+							<p>However there is an easier to use model and we will plan to use this model.</p>
+
+							<p>It is CSS styling set up as such in your CSS page.</p>
+
+							<div class="bemc">* {<br>
+								<span style="padding-left:35px">box-sizing : border-box;<br>
+								</span>
+								}
+							</div>	
+
+							<p>This allows for the calulation of the box to include both border and padding. Just set the <strong>width</strong> of the overall box and the size of the box stays the same. <strong>Margin</strong> is <u>not included</u> in this size.</p>
+
+							<p>But you need to add browser specific prefixes to the <strong>box-sizing : border-box</strong> in order for older browser to display this feature. So you should add these declarations to the code:
+							</p>
+
+							<P class="bemc">* {<br>
+								<span  style="padding-left:35px">box-sizing : border-box;
+								</span><br>
+								
+								<span style="padding-left:35px">-moz-box-sizing : border-box;
+								</span><br>
+								
+								<span style="padding-left:35px">-webkit-box-sizing : border-box;
+								</span><br>
+								
+								<span style="padding-left:35px">-ms-box-sizing : border-box;</span>
+								}
+
+							</P>
+
+						</div>
+
+				</div>	
+
+
+				<div class="concept" id="lesson-3.5">
+
+					<div class="concept-title">Box-sizing choices: Pixels or Percentage</div>
+
+						<div class="concept-description">
+
+							<p>You can set size box sizes as a <span class="bemc">percentage (%)</span>. If you do this the size of the box will change as you resize the box.
+							</p>
+
+							<p>You can set size of box as a <span class="bemc">pixel (px)</span>. If you do this the size of the box will not change from your original sizes no matter how the box is resized. This lends to bad user experience.
+							</p>
+
+						</div>
+
+				</div>
+
+				<div class="concept" id="lesson-3.6">
+
+					<div class="concept-title">Positioning Boxes</div>
+
+						<div class="concept-description">
+
+							<p><span class="bemc">&lt; divs &gt; </span> are <b>block elements</b>, as opposed to <b>inline elements</b> such as <span class="bemc">span</span>, so they take up the entire width of a page. If you want two <span class="bemc">&lt; div &gt;</span> elements to be side by side on a page you need you can change the display attribute of the parent container to value flex. Adding that to the parent element, the child elements align next to each other.</p>
+
+							<p>For it to work you have to put in a size that is smaller than 100%. To make it work put <b>display : flex;</b> in your parent element in html under style or put it in your CSS file. Example below for putting in your CSS file:</p>
+
+							<P class="bemc">.app {<br>
+								
+								
+								<span style="padding-left:35px">display : flex;
+								</span><br>
+								
+								}
+
+							</P>
+
+						</div>
+						
+				</div>
+
+				<div class="concept" id="lesson-3.7">
+
+					<div class="concept-title">Adding Images
+					</div>
+
+						<div class="concept-description">
+						<p>
+						Adding images takes a few steps:</p>
+
+						<ol>
+							<li>First make sure you create a folder in your main project folder called something simple like images.
+							</li>
+
+							<li>Next put all images in that folder that you will be using on your web page.
+							</li>
+
+							<li>Lastly add a line to your HTML code that directs you to the image.<br><br>
+
+							<span class="bemc">&lt; div class="image">&lt; img src="images/image.gif"	alt = "image" &gt;
+							</span>
+
+						
+							</li>
+						</ol>
+						
+						</div>
+
+									
+				</div>
+
+				<div class="concept" id="lesson-3.8">
+
+					<div class="concept-title">Code, Test, Refine</div>
+
+						<div class="concept-description">
+														
+							<ol>
+								<li>First, get the structure of the page right for design by visually boxifying it.
+								</li>
+
+								<li>Then work on the Tags and headings.
+								</li>
+
+								<li>Then think about the Size of the boxes, how big should they be.
+								</li>
+
+								<li>Then how to position them on the screen.
+								</li>
+							</ol>
+								After page is structured, here is a summary of working on the details:
+							<ol>
+								<li>Look for natural boxes.</li>
+								<li>Look for repeated styles and semantic elements.</li>
+								<li>Write you HTML.</li>
+								<li>Apply styles (from biggest to smallest).</li>
+								<li>Fix things.</li>
+							</ol>	
+							
+						</div>
+
+				</div>
+
+				<div class="concept" id="lesson-3.9">
+
+					<div class="concept-title">More on Dev Tools</div>
+
+						<div class="concept-description">
+
+							<p>You can temporarily change things on the web page using Dev Tools to see what styles you like.
+							</p>	
+
+						</div>
+				</div>
+				<div class="concept" id="lesson-3.10">
+
+					<div class="concept-title">Benefits of Avoiding Repetition</div>
+
+						<div class="concept-description">
+
+							<p>The benefits to avoiding repetition</p>
+
+								<ol>
+									
+									<li>Save time by writing less code for the elements that use the same stle centralized in a CSS file.</li>
+									<li>Editing is easy because of the central nature of the CSS for the elements</li>
+
+								</ol>
+
+
+						</div>	
+
+		</div>					
+  </div>
+</body>	
